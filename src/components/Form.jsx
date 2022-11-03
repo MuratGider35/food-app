@@ -19,7 +19,7 @@ const Form = () => {
 
   useEffect(() => {
     getApi();
-  },[]);
+  }, []);
 
   return (
     <>
@@ -39,7 +39,7 @@ const Form = () => {
         <button onClick={() => getApi()}>Search</button>
       </div>
       <div className="recipes">
-        {data && data?.map((item, idx) => <RecipeCard data={item} id={idx} />)}
+        {data && data?.map((item, idx) => <RecipeCard data={item} key={idx} />)}
       </div>
     </>
   );
