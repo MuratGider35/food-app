@@ -52,7 +52,11 @@ code {
 }
 .home {
   background-color: rgb(195, 253, 129);
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  
 }
 .recipes {
   display: flex;
@@ -60,4 +64,27 @@ code {
   gap: 10px;
   justify-content: center;
   margin-top: 20px;
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243, 151, 30);
+  border-radius: 10px;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 23rem;
+}
+.recipe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(195, 253, 129);
+  /* height: 100vh; */
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
 }

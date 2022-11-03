@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import RecipeCard from "./RecipeCard";
 
 const Form = () => {
-  const [query, setQuery] = useState("");
-  const [meal, setMeal] = useState("");
+  const [query, setQuery] = useState("pizza");
+  const [meal, setMeal] = useState("Lunch");
   const [data, setData] = useState("");
   const APP_ID = "d29e4050";
   const APP_KEY = "8d6d264b65a8080efafd1c994087a1f2	";
@@ -13,7 +13,7 @@ const Form = () => {
 
   const getApi = async () => {
     const res = await axios(url);
-    // console.log(res.data.hits);
+    console.log(res.data.hits);
     setData(res.data.hits);
   };
 
