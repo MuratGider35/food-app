@@ -98,13 +98,21 @@ code {
   margin-top: 3rem;
   background-color: rgb(160, 171, 201);
 
-  width: max-content;
-  margin: auto;
+
+  /* width: max-content; */
+  /* margin: auto; */
 }
-.about{
+.about {
   background-color: rgb(195, 253, 129);
   /* height: 100vh; */
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
+  text-align: center;
 }
+
+/* @media only screen and (max-device-width: 400px) {
+  .cnt {
+    width: 320px;
+  }
+} */
