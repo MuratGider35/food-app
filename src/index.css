@@ -56,7 +56,6 @@ code {
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
-  
 }
 .recipes {
   display: flex;
@@ -65,7 +64,7 @@ code {
   justify-content: center;
   margin-top: 20px;
 }
-.detail{
+.detail {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,13 +74,34 @@ code {
   justify-content: space-between;
   width: 23rem;
 }
-.recipe{
+.recipe {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   justify-content: center;
   text-align: center;
+  background-color: rgb(195, 253, 129);
+  /* height: 100vh; */
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.murat {
+  text-align: center;
+  /* margin-top: 2rem; */
+  color: black;
+  margin-bottom: 3rem;
+}
+.cnt {
+  text-align: center;
+  margin-top: 3rem;
+  background-color: rgb(160, 171, 201);
+
+  width: max-content;
+  margin: auto;
+}
+.about{
   background-color: rgb(195, 253, 129);
   /* height: 100vh; */
   min-height: 100vh;

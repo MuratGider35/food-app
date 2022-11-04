@@ -8,12 +8,12 @@ const RecipeCard = ({ data }) => {
       <p>{data.recipe.label}</p>
       <img src={data.recipe.image} alt="" />
       <button
-            onClick={() => {
-              navigate("/details", { state: data.recipe });
-            }}
-          >
-            details
-          </button>
+        onClick={() => {
+          navigate("/details", { state: data.recipe });
+        }}
+      >
+        details
+      </button>
     </div>
   );
 };

@@ -4,20 +4,25 @@ import About from "./pages/About";
 import Details from "./pages/Details";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import PrivateRouter from "./pages/PrivateRouter";
+import LoginProvider from "./components/context/LoginProvider";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/details" element={<Details />} />
-        
-        </Routes>
-      </BrowserRouter>
+      <LoginProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/details" element={<PrivateRouter />}>
+              <Route path="" element={<Details />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </LoginProvider>
     </div>
   );
 }
